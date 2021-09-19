@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+</head>
+<body>
+    <button>Chọn màu ngẫu nhiên</button>
+    <p>Mã mãu đang chọn: <span>none</span></p>
+    <script>
+        document.querySelector('button').addEventListener('click', (randomColor) =>{
+           let r = Math.floor(Math.random() * 255);
+           let g = Math.floor(Math.random() * 255);
+           let b = Math.floor(Math.random() * 255);
+            document.querySelector('p span').innerHTML = `rgb(${r},${g},${b})`;
+            document.querySelector(`body`).style.backgroundColor = `rgb(${r},${g},${b})`;
+           console.log(`rgb(${r},${g},${b})`)
+        })
+    </script>
+</body>
+</html>
