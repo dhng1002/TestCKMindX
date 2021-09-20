@@ -5,7 +5,7 @@ function allLongestStrings(inputArray) {
         return newArr !== arr1
       })
         return arrFix.every((arr2) =>{
-          return arr1.length > arr2.length 
+          return arr1.length >= arr2.length 
         })
     })
 }
